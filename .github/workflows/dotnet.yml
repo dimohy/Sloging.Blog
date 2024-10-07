@@ -9,6 +9,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
 
@@ -35,7 +40,5 @@ jobs:
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        BASE_BRANCH: main # The branch the action should deploy from.
-        BRANCH: main # The branch the action should deploy to.
+        BRANCH: main
         FOLDER: Sloging.Blog.App/build/wwwroot # The folder the action should deploy.
-        SINGLE_COMMIT: true
