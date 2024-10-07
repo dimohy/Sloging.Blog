@@ -1,8 +1,8 @@
 {
   "name": "Sloging.Blog.App",
   "short_name": "Sloging.Blog.App",
-  "id": "./",
-  "start_url": "./",
+  "id": "./Sloging.Blog/",
+  "start_url": "./Sloging.Blog/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#03173d",
