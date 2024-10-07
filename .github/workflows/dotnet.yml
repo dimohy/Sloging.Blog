@@ -35,5 +35,6 @@ jobs:
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
+        token: ${{ secrets.ACCESS_TOKEN }} # The GitHub token to use for deployment.
         branch: main
         folder: Sloging.Blog.App/build/wwwroot # The folder the action should deploy.
