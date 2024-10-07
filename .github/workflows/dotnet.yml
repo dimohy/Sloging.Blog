@@ -33,7 +33,7 @@ jobs:
       run: dotnet publish --configuration Release --output build
       working-directory: Sloging.Blog.App
     - name: Deploy to Github Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
         ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         BASE_BRANCH: main # The branch the action should deploy from.
